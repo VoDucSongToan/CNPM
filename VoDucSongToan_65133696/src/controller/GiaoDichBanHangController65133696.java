@@ -12,9 +12,6 @@ public class GiaoDichBanHangController65133696 {
         this.conn = conn;
     }
 
-    // =====================================================================
-    // HÀM 1: XỬ LÝ THANH TOÁN
-    // =====================================================================
     public String xuLyThanhToan(List<Product65133696> danhSachSanPhamMua, Integer maGiamGia, String sdtKhachHang,
                                 int maNhanVien, double tongTienTruocGiam, double thanhTienPhaiTra) {
         try {
@@ -119,9 +116,7 @@ public class GiaoDichBanHangController65133696 {
         }
     }
 
-    // =====================================================================
-    // HÀM 2: TRA CỨU MÃ GIẢM GIÁ
-    // =====================================================================
+
     public String traCuuMaGiamGia(String codeVoucher) {
         String sql = "SELECT LoaiGiamGia, GiaTriGiam FROM MaGiamGia " +
                 "WHERE CodeVoucher = ? AND TrangThai = N'HoatDong' " +
@@ -141,9 +136,7 @@ public class GiaoDichBanHangController65133696 {
         }
     }
 
-    // =====================================================================
-    // HÀM 3: TRA CỨU ĐIỂM KHÁCH HÀNG
-    // =====================================================================
+
     public int traCuuDiemKhachHang(String sdtKhachHang) {
         String sql = "SELECT DiemTichLuy FROM KhachHang WHERE SoDienThoai = ?";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
