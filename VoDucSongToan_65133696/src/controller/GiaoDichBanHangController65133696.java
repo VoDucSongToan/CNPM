@@ -1,18 +1,9 @@
+package controller;
+
+import model.Product65133696;
+
 import java.sql.*;
 import java.util.List;
-
-// Model class chứa sản phẩm mua
-class Product65133696 {
-    private String barcode;
-    private int quantity;
-
-    public Product65133696(String barcode, int quantity) {
-        this.barcode = barcode;
-        this.quantity = quantity;
-    }
-    public String getBarcode() { return barcode; }
-    public int getQuantity() { return quantity; }
-}
 
 public class GiaoDichBanHangController65133696 {
     private Connection conn;
