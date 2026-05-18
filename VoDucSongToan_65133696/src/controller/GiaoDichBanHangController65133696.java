@@ -136,7 +136,6 @@ public class GiaoDichBanHangController65133696 {
         }
     }
 
-
     public int traCuuDiemKhachHang(String sdtKhachHang) {
         String sql = "SELECT DiemTichLuy FROM KhachHang WHERE SoDienThoai = ?";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
