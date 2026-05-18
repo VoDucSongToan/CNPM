@@ -12,9 +12,6 @@ public class GiaoDichBanHangController65133696 {
         this.conn = conn;
     }
 
-    // =====================================================================
-    // HÀM 1: XỬ LÝ THANH TOÁN
-    // =====================================================================
     public String xuLyThanhToan(List<Product65133696> danhSachSanPhamMua, Integer maGiamGia, String sdtKhachHang,
                                 int maNhanVien, double tongTienTruocGiam, double thanhTienPhaiTra) {
         try {
